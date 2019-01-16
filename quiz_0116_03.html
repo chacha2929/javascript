@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    //★[52,273,103,32,57,103,31,2] 배열 내부에서의 최대값과 최소값을 찾는 코드를 작성
+    //변수 선언
+    var array = [52,273,103,32,57,103,31,2];
+    var min = 1000000000
+    var max = -1000000000
+    
+    //반복시작
+    for(var i=0; i<array.length; i++){
+        //최소값 찾기
+        if(array[i]<min){
+            min = array[i];
+        }
+        
+        //최대값찾기
+        if(array[i]>max){
+            max = array[i];
+        }
+    }
+        
+    //출력
+    alert('최소값은' + min + '이고, 최대값은' + max + '입니다.');
+    alert(array.length); //array 배열 갯수
+    </script>
+</head>
+<body>
+
+</body>
+</html>
