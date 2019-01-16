@@ -1,2 +1,3 @@
-# javascript
+# javascript.github.io
 javascript study
+
