@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset = "UTF-8">
+  <title> 배열객체 </title>
+  <script>
+      /*
+        기본형
+        1. var 참조 변수=new Array();
+        참조 변수[0]=값1; 참조 변수[2]=값2; 참조 변수[2]=값3; ... 참조 변수[n-1]=값n;
+        2. var 참조 변수=new Array(값1, 값2, 값3, ...값n);
+        3. var 참조 변수=[값1, 값2, 값3, ...값n];
+        
+        배열 객체에 저장된 데이터 불러오기
+        기본형
+        참조 변수[인덱스 번호];
+      */
+        var arr = [30, "따르릉", true];
+
+        document.write("<h3>배열값 가져오기-1</h3>");
+        document.write(arr[0], "<br>");
+        document.write(arr[1], "<br>");
+        document.write(arr[2], "<br>");
+
+        document.write("<h3>배열값 가져오기-2</h3>");
+        for(var i = 0; i < arr.length; i++){
+          document.write(arr[i], "<br>");
+        }
+
+        document.write("<h3>배열값 가져오기-3</h3>");
+        for(i in arr){
+          document.write(arr[i], "<br>");
+        }
+        
+      
+      
+      //배열 객체 메서드인 join(), concat(), slice(), sort(), reverse()
+        var arr_1 = ["사당", "교대", "방배", "강남"];
+		var arr_2 = ["신사", "압구정", "옥수"];
+
+		var result = arr_1.join("-");
+		console.log(result);
+
+		result = arr_1.concat(arr_2);
+		console.log(result);
+
+		result = arr_1.slice(1, 3);
+		console.log(result);
+
+		arr_1.sort( );
+		console.log(arr_1);
+
+		arr_2.reverse( );
+		console.log(arr_2);
+      
+  </script>
+</head>
+<body>
+</body>
+</html>
