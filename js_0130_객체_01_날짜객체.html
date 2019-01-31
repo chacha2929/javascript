@@ -4,19 +4,21 @@
   <meta charset="UTF-8">
   <title> 사용자 정의 객체 </title>
   <script>
+    //객체 :  모든 사물을 가리켜 객체라 부르며 속성, 메서드, 하위 객체를 내장
+    
     //★내장 객체 생성하기
-    /*참조 변수(인스턴스 이름) = 
-    new 생성 함수()*/
+    //내장객체 : 자바스크립트 엔진에 객체를 생성할 수 있는 함수가 내장되어,필요한 경우에 생성하여 사용할 수 있다.
+    //참조 변수(인스턴스 이름) = new 생성 함수()
       
       var tv = new Object();
-      tv.color = "white";
+      tv.color = "white";  //참조변수.속성 = "값"
       tv.price = 300000;
       tv.info = function(){
           document.write("tv 색상:" + this.color, "<br>");
           document.write("tv 가격:" + this.price, "<br>");
       }
       
-      var car = { 
+      var car = { //리터럴방식
           color: "black",
           price: 5000000,
           info: function( ) {
@@ -30,16 +32,18 @@
         document.write("<h1>car 객체 메서드 호출</h1>");
         car.info();  
       
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<br>");
       
-      document.write("<br>");
-      document.write("<br>");
-      document.write("<br>");
-      document.write("<br>");
+      
       
       
       //★날짜 정보 객체
       //현재 날짜의 정보를 제공하는 Date 객체 기본형
       //참조 변수=new Date();
+      //참조 변수=new Date("년/월/일");
       var today = new Date();
       var nowMonth = today.getMonth(),
           nowDate = today.getDate(),
