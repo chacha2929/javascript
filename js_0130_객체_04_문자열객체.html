@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset = "UTF-8">
+  <title> 문자 객체 </title>
+  <script>
+      //문자객체 : 문자 정보를 제공하는 메서드와 속성을 내장
+      //var 참조변수 = new String("String");
+      //참조변수 = "string";
+      //참조변수.메서드();
+      //참조변수.속성;
+        var str = "Hello Thank you good luck to you";
+        document.write(str.charAt(16), "<br>");
+        document.write(str.indexOf("you"), "<br>");
+        document.write(str.indexOf("you", 16), "<br>");
+        document.write(str.lastIndexOf("you"), "<br>");
+        document.write(str.lastIndexOf("you", 25), "<br>");
+        document.write(str.match("luck"), "<br>");
+        document.write(str.search("you"), "<br>");
+        document.write(str.substr(21, 4), "<br>");
+        document.write(str.substring(6, 12), "<br>");
+        document.write(str.replace("you","me"), "<br>");
+        document.write(str.toLowerCase(), "<br>");
+        document.write(str.toUpperCase(), "<br>");
+        document.write(str.length, "<br>");
+
+        var arr = str.split(" ");
+        document.write(arr[0], "<br>");
+        document.write(arr[4], "<br>");
+
+        document.write(str.charCodeAt(0), "<br>");
+        document.write(String.fromCharCode(72), "<br>");
+      
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+      
+      
+      
+      
+        //
+        var userName = prompt("당신의 영문 이름은?", "");
+
+        var upperName = userName.toUpperCase(); //대문자로 변환된 문자열
+        document.write(upperName, "<br>"); 
+      
+        var userNum = prompt("당신의 연락처는?","");
+        var result = userNum.substring(0, userNum.length - 4) + "****"; 
+        document.write(result, "<br>");
+        
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+      
+      
+      //
+      
+      
+
+  </script>
+</head>
+<body>
+</body>
+</html>
